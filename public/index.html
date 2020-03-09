@@ -5,22 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sam's Spectacular Specials</title>
     <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="/screen.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#events">Events</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#hero">Hero</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#intro">Introduction</a></li>
       </ul>
     </nav>
 
     <section id="intro">
-      <h1><em>Sam's Spectacular Specials</em></h1>
+      <h1 class="animated zoomIn"><em>Sam's Spectacular Specials</em></h1>
       <header>Welcome to my very own restaurant!</header>
-      <hr />
     </section>
+
+    <hr />
 
     <section id="about">
       <p>We serve the best American style foods in the Bay area.</p>
@@ -28,26 +36,31 @@
         We are a family operated business and have been serving our community
         for over 50 years!
       </p>
-      <p><strong>Check out some of our dishes:</strong></p>
-      <p>
-        <em>Barbecue</em>
-        <img src="./images/bbq.jpg" alt="bbq" />
-      </p>
-      <p>
-        <em>Chicken Wings</em>
-        <img src="./images/chickenwings.jpg" alt="chickenwings" />
-      </p>
-      <p>
-        <em>Cheeseburger</em>
-      </p>
-      <img src="./images/hamburger.jpg" alt="cheeseburger" />
+      <p id="dishes"><strong>Check out some of our dishes:</strong></p>
+
+      <div class="row">
+        <div class="column">
+          <p class="food"><em>Barbecue</em></p>
+          <img src="./images/bbq.jpg" alt="bbq" />
+        </div>
+
+        <div class="column">
+          <p class="food"><em>Chicken Wings</em></p>
+          <img src="./images/chickenwings.jpg" alt="chickenwings" />
+        </div>
+
+        <div class="column">
+          <p class="food"><em>Cheeseburger</em></p>
+          <img src="./images/hamburger.jpg" alt="cheeseburger" />
+        </div>
+      </div>
     </section>
 
     <section id="location">
       <h2>Visit Us!</h2>
       <p>
-        Our current location is downtown Tampa, but are expanding into St. Pete
-        soon!
+        Our current location is downtown Tampa, but are expanding to our friends
+        in St. Pete soon!
       </p>
       <hr />
     </section>
@@ -65,8 +78,8 @@
       </li>
       <li>
         <p>
-          Learn to cook with us! A local event to <strong>give back</strong> to
-          the community
+          Learn to cook with us - A local event to <strong>give back</strong> to
+          the community!
         </p>
       </li>
     </section>
@@ -80,9 +93,11 @@
 
     <section id="contact">
       <h3>Get in touch with us!</h3>
-      <p>Phone Number: 555-555-5555</p>
-      <p>Email: email123@email.com</p>
-      <p>Website: www.samsspectacularspecials.com</p>
+      <p><span class="contact">Phone Number:</span> 555-555-5555</p>
+      <p><span class="contact">Email:</span> email123@email.com</p>
+      <p>
+        <span class="contact">Website:</span> www.samsspectacularspecials.com
+      </p>
     </section>
 
     <hr />
